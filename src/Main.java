@@ -209,6 +209,6 @@ public class Main {
         }
         System.out.println("HERE WE CONNECT OUR DATABASE WITH Postgres");
 
-        // how to use Prepared Statement for data retriev from database
+        // this is how we can setup JDBC using the Database
     }
 }
