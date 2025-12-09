@@ -74,7 +74,7 @@ public class Transction {
 
                     // CHECK BALANCE FIRST
                     if (!sufficient(con, sender, amount)) {
-                        System.out.println("❌ Transaction Failed: Insufficient balance!");
+                        System.out.println("Transaction Failed: Insufficient balance!");
                         con.rollback();
                         break;
                     }
@@ -90,7 +90,7 @@ public class Transction {
                     credit.executeUpdate();
 
                     con.commit();
-                    System.out.println("✔ Transaction Successful!");
+                    System.out.println("Transaction Successful!");
 
                 } catch (SQLException e) {
                     System.out.println(e.getMessage());
